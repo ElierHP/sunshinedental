@@ -1,12 +1,10 @@
 export default {
-  space: [0, 2, 4, 8, 16, 32, 64, 128, 256, 512],
+  space: [0, 2, 6, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
-    body:
-      'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: "inherit",
-    monospace: "Menlo, monospace",
+    body: "Cabin, sans-serif",
+    heading: "Cabin, sans-serif",
   },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
+  fontSizes: [16, 40, 18, 25],
   fontWeights: {
     body: 400,
     heading: 700,
@@ -17,14 +15,17 @@ export default {
     heading: 1.125,
   },
   colors: {
-    text: "#000",
-    background: "#fff",
-    primary: "#07c",
-    secondary: "#30c",
-    muted: "#f6f6f6",
+    primary: "#37bc96",
+    secondary: "#F9F1D7",
+    light: "#FFFFFF",
+    dark: "#3F100B",
+    text: "#774644",
+    gray: "#eeeeee",
+    primaryhover: "#c14108",
   },
   breakpoints: [576, 768, 992, 1200],
   mq() {
-    return this.breakpoints.map(bp => `@media (min-width: ${bp}px)`)
+    return this.breakpoints.map(bp => `@media (max-width: ${bp}px)`)
   },
+  phone: "222-222-2222",
 }
