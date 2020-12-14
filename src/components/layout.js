@@ -41,7 +41,9 @@ const Layout = ({ children }) => {
           h3,
           p,
           a,
-          div {
+          div,
+          label,
+          input {
             font-family: ${theme.fonts.body};
           }
           h1 {
