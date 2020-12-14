@@ -39,16 +39,15 @@ function ContactForm() {
               .max(300, "Must be 20 characters or less")
               .required("Required"),
           })}
-          onSubmit={e => {
+          onSubmit={(values, e) => {
             fetch("/", {
               method: "POST",
               headers: { "Content-Type": "application/x-www-form-urlencoded" },
-              body: encode({ "form-name": "contact", firstName: "firstName" }),
+              body: encode({ "form-name": "contact", ...values }),
             })
               .then(() => alert("Success!"))
               .catch(error => alert(error))
-
-            e.preventDefault()
+            // e.preventDefault()
           }}
         >
           <StyledForm
