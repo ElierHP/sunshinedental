@@ -39,7 +39,7 @@ function ContactForm() {
               .max(300, "Must be 20 characters or less")
               .required("Required"),
           })}
-          onSubmit={(values, { setSubmitting }, e) => {
+          onSubmit={e => {
             fetch("/", {
               method: "POST",
               headers: { "Content-Type": "application/x-www-form-urlencoded" },
