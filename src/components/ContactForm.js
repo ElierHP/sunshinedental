@@ -43,11 +43,9 @@ function ContactForm() {
             fetch("/", {
               method: "POST",
               headers: { "Content-Type": "application/x-www-form-urlencoded" },
-              body: encode({ "form-name": "contact" }),
+              body: encode({ "form-name": "contact", firstName: "firstName" }),
             })
-              .then(() => {
-                return alert("Success!")
-              })
+              .then(() => alert("Success!"))
               .catch(error => alert(error))
 
             e.preventDefault()
@@ -56,9 +54,11 @@ function ContactForm() {
           <StyledForm
             name="contact"
             method="post"
+            action="/success"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
+            <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
             <FormWrapper>
               <div>
