@@ -63,7 +63,7 @@ const Header = ({ siteTitle }) => {
       height: ${toggler ? "3px" : "5px"};
       margin-bottom: ${toggler ? 0 : "0.25rem"};
     }
-    div:first-child {
+    div:first-of-type {
       transform: ${toggler ? "rotate(45deg)" : "rotate(0deg)"};
       border-radius: ${toggler ? "1rem" : "0"};
     }
@@ -159,6 +159,7 @@ const NavContainer = styled.nav`
     grid-template-columns: 1fr 2fr;
   }
   ${theme.mq()[1]} {
+    grid-template-columns: 1.5fr 1fr;
     li {
       padding: 0;
       margin: 0;
