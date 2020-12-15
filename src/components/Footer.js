@@ -47,7 +47,7 @@ const Footer = () => {
           <div>
             <h3>Contact Us</h3>
             <ul>
-              <li>Phone: 222-222-2222</li>
+              <li>Phone: {theme.phone}</li>
               <li>Office: Location: Valencia Shores Blvd</li>
               <li>Lake Worth, Florida</li>
               <li>Open: Monday-Saturday</li>

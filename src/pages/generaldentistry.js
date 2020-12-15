@@ -11,6 +11,9 @@ import tooth from "../images/tooth.svg"
 import toothbrush from "../images/toothbrush.svg"
 import dentalhealth from "../images/dentalhealth.svg"
 import ServiceCards from "../components/ServiceCards"
+import teethcleanings from "../images/teethcleanings.svg"
+import fillings from "../images/fillings.svg"
+import rootcanals from "../images/rootcanals.svg"
 
 function generaldentistry() {
   return (
@@ -23,27 +26,23 @@ function generaldentistry() {
       />
       <ServicesOverview title="Overview">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-          tristique, eros ut semper vulputate, arcu ante pellentesque eros, quis
-          viverra lacus lorem et nisi. Praesent at efficitur ante. Phasellus
-          placerat pulvinar blandit. Fusce vel ultricies quam, ut lobortis mi.
-          Aliquam fringilla turpis a nibh semper gravida. Nulla varius nisi sit
-          amet fringilla tempus. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Fusce tristique, eros ut semper vulputate, arcu ante
-          pellentesque eros, quis viverra lacus lorem et nisi. Praesent at
-          efficitur ante. Phasellus placerat pulvinar blandit. Fusce vel
-          ultricies quam, ut lobortis mi. Aliquam fringilla turpis a nibh semper
-          gravida. Nulla varius nisi sit amet fringilla tempus.
+          We handle general dentistry with the same skill, precision, and care
+          that we approach our specialty work with. Teeth cleaning, fillings,
+          crowns, bridges, root canal, dentures are all approached with
+          meticulous skill and an attention to detail that’s hard to find
+          anywhere else. We take pride in ensuring that you have the very best
+          dental experience possible. We focus on you, and making sure your
+          smile is always at its best and brightest so you feel confident in
+          sharing it with the world.
         </p>
         <p>
-          Phasellus placerat pulvinar blandit. Fusce vel ultricies quam, ut
-          lobortis mi. Aliquam fringilla turpis a nibh semper gravida. Nulla
-          varius nisi sit amet fringilla tempus. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Fusce tristique, eros ut semper
-          vulputate, arcu ante pellentesque eros, quis viverra lacus lorem et
-          nisi. Praesent at efficitur ante. Phasellus placerat pulvinar blandit.
-          Fusce vel ultricies quam, ut lobortis mi. Aliquam fringilla turpis a
-          nibh semper gravida. Nulla varius nisi sit amet fringilla tempus.
+          Our practice offers an array of dental services meant to help the
+          people in our community. From basic services such as routine x-rays
+          and cleanings; to smile makeovers such as veneers, crowns, Invisalign;
+          to surgical and emergency needs that are meant to alleviate any oral
+          pain and discomfort you may be experiencing. No matter which service
+          you or your loved one comes in for, we aim in making your visit as
+          comfortable as possible!
         </p>
       </ServicesOverview>
       <ServiceCards
@@ -51,27 +50,27 @@ function generaldentistry() {
           {
             title: "Teeth Cleanings",
             text:
-              "At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.",
+              "We focus on you, and making sure your smile is always at its best and brightest so you feel confident in sharing it with the world.”",
             btn: "Contact Us",
-            src: dentalhealth,
+            src: teethcleanings,
             key: 0,
             alt: "teeth-cleanings",
           },
           {
             title: "Fillings & Crowns",
             text:
-              "At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.",
+              "At Taylorview Dental we offer white (composite)as well as silver (amalgam) fillings to restore your teeth back into function.",
             btn: "Contact Us",
-            src: toothbrush,
+            src: fillings,
             key: 1,
             alt: "fillings-&-crowns",
           },
           {
             title: "Root Canals & Bridges",
             text:
-              "At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.",
+              "When the nerve of the tooth becomes diseased, infected or inflamed,  it must be treated to relieve both pain and infection",
             btn: "Contact Us",
-            src: tooth,
+            src: rootcanals,
             key: 2,
             alt: "root-canals-&-bridges",
           },

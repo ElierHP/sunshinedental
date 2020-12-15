@@ -23,22 +23,22 @@ function Testimonials() {
   const cardData = [
     {
       text:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique, eros ut semper vulputate, arcu ante pellentesque eros, quis viverra lacus lorem et nisi. Praesent at efficitur ante. Phasellus placerat pulvinar blandit. Fusce vel ultricies quam, ut lobortis mi. Aliquam fringilla turpis a nibh semper gravida. Nulla varius nisi sit amet fringilla tempus.",
-      name: "Bob Marley",
+        "This team of awesome people saved me on a Sunday morning from some unbearable pain. Dr. Quintero was an amazing professional from the first appointment to the last. My root canal and my crown went perfect. Thank you and your team for taking great care of me!!!",
+      name: "Alex Kaplunov",
       image: data.allFile.nodes[0].childImageSharp.fixed,
       key: 0,
     },
     {
       text:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique, eros ut semper vulputate, arcu ante pellentesque eros, quis viverra lacus lorem et nisi. Praesent at efficitur ante. Phasellus placerat pulvinar blandit. Fusce vel ultricies quam, ut lobortis mi. Aliquam fringilla turpis a nibh semper gravida. Nulla varius nisi sit amet fringilla tempus.",
-      name: "Bob Marley",
+        "The professionalism, level of care, knowledge of the staff and all around experience in this offic exactly what my family was looking for. The staff explains things/procedures in a way that the patient can understand and is comfortable with. Thank you for an excellent experience.",
+      name: "Leah Rosenfeld",
       image: data.allFile.nodes[1].childImageSharp.fixed,
       key: 1,
     },
     {
       text:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique, eros ut semper vulputate, arcu ante pellentesque eros, quis viverra lacus lorem et nisi. Praesent at efficitur ante. Phasellus placerat pulvinar blandit. Fusce vel ultricies quam, ut lobortis mi. Aliquam fringilla turpis a nibh semper gravida. Nulla varius nisi sit amet fringilla tempus.",
-      name: "Bob Marley",
+        "I was extremely impressed by the level of professionalism and quality of care provided. Dr. Quintero was detail-oriented and thorough. He helped me feel calm and comfortable throughout my whole visit! The staff was also very kind and made my experience a pleasant one. I highly recommend Care Dental Wellington!!",
+      name: "Daniel Alvarez",
       image: data.allFile.nodes[2].childImageSharp.fixed,
       key: 2,
     },

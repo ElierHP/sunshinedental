@@ -22,26 +22,26 @@ function OurDoctors({ name, title, text, imgNum }) {
   `)
   const doctorData = [
     {
-      name: "John Doe",
+      name: "Maria Williams",
       title: "Dentist",
       text:
-        "Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,nam no suscipit quaerendum. At nam minimum ponderum. Est audiamanimal molestiae te. Ex duo eripuit mentitum. Et has minim elitrintellegat. Mea aeterno eleifend antiopam ad, nam no suscipitquaerendum. At nam minimum ponderum. Est audiam animal molestiaete. Ex duo eripuit mentitum.",
+        "Dr Maria Williams was born in the beautiful South American nation of Colombia but grew up in Hollywood, Florida. Acquired her Doctorate of Medical Dentistry degree from Nova Southeastern University with Honors in Periodontics.",
       img: data.allFile.nodes[2].childImageSharp.fluid,
       display: "block",
     },
     {
-      name: "John Doe",
+      name: "Karen Park",
       title: "Dentist",
       text:
-        "Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,nam no suscipit quaerendum. At nam minimum ponderum. Est audiamanimal molestiae te. Ex duo eripuit mentitum. Et has minim elitrintellegat. Mea aeterno eleifend antiopam ad, nam no suscipitquaerendum. At nam minimum ponderum. Est audiam animal molestiaete. Ex duo eripuit mentitum.",
+        "Dr. Karen Park was born and raised as a Navy child. Being the daughter of a Navy pediatric dentist moving was the norm. Dr. Lauren was born in Twentynine Palms, California and moved all over the world including Naples, Italy.",
       img: data.allFile.nodes[0].childImageSharp.fluid,
       display: "block",
     },
     {
-      name: "John Doe",
+      name: "Travis Scottland",
       title: "Dentist",
       text:
-        "Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,nam no suscipit quaerendum. At nam minimum ponderum. Est audiamanimal molestiae te. Ex duo eripuit mentitum. Et has minim elitrintellegat. Mea aeterno eleifend antiopam ad, nam no suscipitquaerendum. At nam minimum ponderum. Est audiam animal molestiaete. Ex duo eripuit mentitum.",
+        "Dr. Travis Scottland was born and raised in Lake Worth, , Florida. As the son of Dr. John Scottland, he has grown up with dentistry always being part of his life. Dr. Travis volunteered on multiple dental missions in Mexico to provide dental care for orphans while attending BYU-Idaho.",
       img: data.allFile.nodes[1].childImageSharp.fluid,
       display: "none",
     },
@@ -50,7 +50,7 @@ function OurDoctors({ name, title, text, imgNum }) {
   return (
     <Section>
       <Container>
-        <h1>Meet the Doctors</h1>
+        <h1>Meet the Dentists</h1>
         {doctorData.map(e => (
           <div>
             <Content>

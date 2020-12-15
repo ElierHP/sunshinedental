@@ -4,12 +4,16 @@ import * as Yup from "yup"
 import theme from "../css/theme"
 import styled from "@emotion/styled"
 import Container from "../components/Container"
+import success from "../pages/success"
 
 function ContactForm() {
   const encode = data => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
       .join("&")
+  }
+  const success = () => {
+    window.location.pathname = "/success"
   }
   return (
     <Container>
@@ -36,7 +40,7 @@ function ContactForm() {
             phone: Yup.number().required("Required"),
             message: Yup.string()
               .min(10, "Must be 10 characters or more")
-              .max(300, "Must be 20 characters or less")
+              .max(300, "Must be 300 characters or less")
               .required("Required"),
           })}
           onSubmit={(values, e) => {
@@ -45,9 +49,8 @@ function ContactForm() {
               headers: { "Content-Type": "application/x-www-form-urlencoded" },
               body: encode({ "form-name": "contact", ...values }),
             })
-              .then(() => alert("Success!"))
+              .then(() => success())
               .catch(error => alert(error))
-            // e.preventDefault()
           }}
         >
           <StyledForm
@@ -127,9 +130,13 @@ const Heading = styled.h1`
   margin-top: 2.5rem;
 `
 const Wrapper = styled.section`
-  background-color: ${theme.colors.gray};
+  background-color: #f0f3f2;
   padding: 3rem 6rem 2rem 6rem;
   margin-top: 2rem;
+  border-radius: 0.2rem;
+  ${theme.mq()[0]} {
+    padding: 2rem;
+  }
 `
 //Form
 const StyledForm = styled(Form)`
@@ -140,7 +147,7 @@ const StyledForm = styled(Form)`
   input {
     border-radius: 0.2rem;
     border: none;
-    padding: 0.8rem;
+    padding: 0.5rem;
   }
   button {
     background-color: ${theme.colors.primary};
@@ -162,13 +169,20 @@ const FormWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
+  ${theme.mq()[2]} {
+    grid-template-columns: 1fr;
+  }
 `
 const InputContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-gap: 2rem;
+  grid-gap: 0.2rem;
   justify-content: center;
   align-items: center;
+  ${theme.mq()[2]} {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
 `
 
 //Error
@@ -185,6 +199,16 @@ const TextArea = styled.div`
   grid-gap: 0.5rem;
   label {
     padding-top: 2rem;
+  }
+  ${theme.mq()[2]} {
+    label {
+      padding-top: 4rem;
+    }
+  }
+  ${theme.mq()[0]} {
+    label {
+      padding-top: 2rem;
+    }
   }
 `
 const TextAreaInput = styled(Field)`

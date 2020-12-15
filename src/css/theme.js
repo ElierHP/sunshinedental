@@ -27,5 +27,5 @@ export default {
   mq() {
     return this.breakpoints.map(bp => `@media (max-width: ${bp}px)`)
   },
-  phone: "222-222-2222",
+  phone: "561-333-4500",
 }

@@ -12,8 +12,7 @@ const About = () => (
     <PageBanner
       title="About Us"
       subtitle="We're here to help"
-      text="Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.
-antiopam ad, nam no suscipit quaerendum."
+      text="Our dentists are all professional trained experts in their field, we can guarantee your safety and well-being at Sunshine Dental."
       btnText="Our Services"
       href="/services"
       img={Doctor}

@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => {
       grid-template-columns: 1fr;
       position: absolute;
       z-index: 10;
-      top: 50px;
+      top: 40px;
       left: 0;
       width: 100%;
       text-align: center;
@@ -42,10 +42,38 @@ const Header = ({ siteTitle }) => {
     li {
       margin: 0;
     }
+    ${theme.mq()[2]} {
+      top: 70px;
+    }
     ${theme.mq()[1]} {
       display: ${clickToggler ? "block" : "none"};
       position: relative;
       top: 0;
+    }
+  `
+  const Hamburger = styled.div`
+    display: none;
+    margin-left: auto;
+    ${theme.mq()[1]} {
+      display: block;
+    }
+    div {
+      background-color: ${theme.colors.dark};
+      width: 30px;
+      height: ${toggler ? "3px" : "5px"};
+      margin-bottom: ${toggler ? 0 : "0.25rem"};
+    }
+    div:first-child {
+      transform: ${toggler ? "rotate(45deg)" : "rotate(0deg)"};
+      border-radius: ${toggler ? "1rem" : "0"};
+    }
+    div:nth-of-type(2) {
+      transform: ${toggler ? "rotate(-45deg)" : "rotate(0deg)"};
+      border-radius: ${toggler ? "1rem" : "0"};
+      margin-top: ${toggler ? "-3px" : "0"};
+    }
+    div:last-child {
+      display: ${toggler ? "none" : "block"};
     }
   `
 
@@ -180,10 +208,17 @@ const DropdownLi = styled.li`
     transform: rotateZ(90deg);
     margin-left: 0.25rem;
   }
+  //Hover DropDown Menu
+
   @media (min-width: 768px) {
+    ul {
+      width: 230px;
+    }
     &:hover {
       ul {
         display: grid;
+        animation-duration: 0.7s;
+        animation-name: opacity;
       }
     }
     ${theme.mq()[1]} {
@@ -193,6 +228,15 @@ const DropdownLi = styled.li`
   }
   ${theme.mq()[1]} {
     padding: 0 !important;
+  }
+  @keyframes opacity {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 `
 
@@ -213,19 +257,7 @@ const DropDownLink = styled(Link)`
   }
 `
 
-const Hamburger = styled.div`
-  display: none;
-  margin-left: auto;
-  ${theme.mq()[1]} {
-    display: block;
-  }
-  div {
-    background-color: ${theme.colors.dark};
-    width: 30px;
-    height: 5px;
-    margin-bottom: 0.25rem;
-  }
-`
+//GATSBY DEFAULT
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }

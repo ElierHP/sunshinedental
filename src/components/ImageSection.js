@@ -27,7 +27,7 @@ function ImageSection({
             <h1>{title || "Welcome to Sunshine Dental"}</h1>
             <p>
               {text ||
-                "Et has minim elitr intellegat. Mea aeterno eleifend antiopam adnam no suscipit quaerendum. At nam minimum ponderum. Est audiamanimal molestiae te. Ex duo eripuit mentitum."}
+                "Sunshine Dental office was constructed from the ground up. The office was designed with the comfort of the patient in mind. We are offering general, cosmetic, and surgical services to our community."}
             </p>
             <BtnContainer>
               <Button

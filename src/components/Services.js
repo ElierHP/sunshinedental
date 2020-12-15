@@ -11,7 +11,8 @@ function Services() {
   const data = [
     {
       title: "General Dentistry",
-      text: "At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.",
+      text:
+        "Teeth cleaning, fillings, crowns, bridges, root canal, dentures  all approached with meticulous skill.",
       btn: "Learn More",
       src: dentalhealth,
       key: 0,
@@ -19,7 +20,8 @@ function Services() {
     },
     {
       title: "Cosmetic",
-      text: "At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.",
+      text:
+        "Beautiful, natural, undetectable. We’ve seen first-hand the impact our work has had in the lives of our patients.",
       btn: "Learn More",
       src: toothbrush,
       key: 1,
@@ -27,7 +29,8 @@ function Services() {
     },
     {
       title: "Invisalign",
-      text: "At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.",
+      text:
+        "Invisalign are clear plastic trays that fit snuggly and precisely over the teeth and help to move them gradually.",
       btn: "Learn More",
       src: tooth,
       key: 2,

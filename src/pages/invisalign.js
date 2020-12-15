@@ -8,9 +8,9 @@ import ImageSection from "../components/ImageSection"
 import ColorBlock from "../components/ColorBlock"
 import theme from "../css/theme"
 import ServiceCards from "../components/ServiceCards"
-import tooth from "../images/tooth.svg"
-import toothbrush from "../images/toothbrush.svg"
-import dentalhealth from "../images/dentalhealth.svg"
+import healthiersmile from "../images/healthiersmile.svg"
+import teethwhitenings from "../images/teethwhitenings.svg"
+import teethstraight from "../images/teethstraight.svg"
 
 function invisalign() {
   return (
@@ -23,27 +23,20 @@ function invisalign() {
       />
       <ServicesOverview title="Overview">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-          tristique, eros ut semper vulputate, arcu ante pellentesque eros, quis
-          viverra lacus lorem et nisi. Praesent at efficitur ante. Phasellus
-          placerat pulvinar blandit. Fusce vel ultricies quam, ut lobortis mi.
-          Aliquam fringilla turpis a nibh semper gravida. Nulla varius nisi sit
-          amet fringilla tempus. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Fusce tristique, eros ut semper vulputate, arcu ante
-          pellentesque eros, quis viverra lacus lorem et nisi. Praesent at
-          efficitur ante. Phasellus placerat pulvinar blandit. Fusce vel
-          ultricies quam, ut lobortis mi. Aliquam fringilla turpis a nibh semper
-          gravida. Nulla varius nisi sit amet fringilla tempus.
+          Invisalign is a great tooth straightening option for both adult
+          patients and teenagers who are looking for an alternative to
+          traditional metal braces. This means you can kiss the days of broken
+          wires and flossing nightmares goodbye! Instead, these custom-made
+          clear dental aligners are easy to remove when you’re going to eat and
+          brush your teeth and can provide picture-worthy results in just a
+          matter of months.
         </p>
         <p>
-          Phasellus placerat pulvinar blandit. Fusce vel ultricies quam, ut
-          lobortis mi. Aliquam fringilla turpis a nibh semper gravida. Nulla
-          varius nisi sit amet fringilla tempus. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Fusce tristique, eros ut semper
-          vulputate, arcu ante pellentesque eros, quis viverra lacus lorem et
-          nisi. Praesent at efficitur ante. Phasellus placerat pulvinar blandit.
-          Fusce vel ultricies quam, ut lobortis mi. Aliquam fringilla turpis a
-          nibh semper gravida. Nulla varius nisi sit amet fringilla tempus.
+          Depending on the complexity of your case, you could complete your
+          whole Invisalign treatment in as little as 6 months, but you’ll start
+          seeing results much sooner! If you’re ready to start your journey to a
+          straighter smile, contact our office today and we’ll schedule your
+          appointment.
         </p>
       </ServicesOverview>
       <ServiceCards
@@ -51,27 +44,27 @@ function invisalign() {
           {
             title: "Teeth Straightening",
             text:
-              "At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.",
+              "In most cases, after 6 months your teeth will be completely straightened.",
             btn: "Contact Us",
-            src: dentalhealth,
+            src: teethstraight,
             key: 0,
             alt: "teeth-straightening",
           },
           {
             title: "Healthier Smile",
             text:
-              "At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.",
+              "In just a matter of weeks you can start seeing a healther smile.",
             btn: "Contact Us",
-            src: toothbrush,
+            src: healthiersmile,
             key: 1,
             alt: "healthier-smile",
           },
           {
             title: "Clear Aligners",
             text:
-              "At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.",
+              "The aligners are completely clear, no metal braces or wires required!",
             btn: "Contact Us",
-            src: tooth,
+            src: teethwhitenings,
             key: 2,
             alt: "clear-aligners",
           },

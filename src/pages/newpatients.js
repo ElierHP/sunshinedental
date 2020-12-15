@@ -13,7 +13,7 @@ const NewPatients = () => (
     <PageBanner
       title="What to expect"
       subtitle="Your first visit"
-      text="Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum."
+      text="To save you time, we recommend reading our step by step instructions prior to your first appointment. When you are ready, please give us a call!"
       btnText={`Call us at ${theme.phone}`}
       href={`tel:${theme.phone}`}
       img={Nurse}

@@ -9,9 +9,9 @@ function PatientProcess() {
         <h4>Step One</h4>
         <h1>Come Prepared</h1>
         <p>
-          Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam
-          no suscipit quaerendum. At nam minimum ponderum. Est audiam animal
-          molestiae te. Ex duo eripuit mentitum.
+          Thank you for wanting to take care of your dental health with us,
+          there is a few things we'd love for you to know about prior to the
+          first visit.
         </p>
         <p>Bring your Dental Insurance Card</p>
       </div>
@@ -20,9 +20,10 @@ function PatientProcess() {
         <h4>Step Two</h4>
         <h1>Get to know you</h1>
         <p>
-          Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam
-          no suscipit quaerendum. At nam minimum ponderum. Est audiam animal
-          molestiae te. Ex duo eripuit mentitum.
+          During your first visit, we will review your dental history and take
+          necessary X-rays of your teeth and mouth. Then, the doctor will meet
+          with you to help you create your own individual treatment plan, and
+          answer any questions that you may have.
         </p>
       </div>
       <Line />
@@ -30,9 +31,14 @@ function PatientProcess() {
         <h4>Step Three</h4>
         <h1>Regular Checkups</h1>
         <p>
-          Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam
-          no suscipit quaerendum. At nam minimum ponderum. Est audiam animal
-          molestiae te. Ex duo eripuit mentitum.
+          The ADA recommends visiting your dentist at least every six months for
+          regular checkups and routine cleanings to keep your teeth and gums
+          healthy.
+        </p>
+        <p>
+          We understand that life is busy, so when you’re preparing for your
+          visit to Sunshine Dental, please note that your appointments can last
+          between 45 and 90 minutes.
         </p>
       </div>
     </Wrapper>
