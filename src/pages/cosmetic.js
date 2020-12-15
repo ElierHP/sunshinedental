@@ -9,7 +9,6 @@ import ColorBlock from "../components/ColorBlock"
 import theme from "../css/theme"
 import ServiceCards from "../components/ServiceCards"
 import veneers from "../images/veneers.svg"
-//veneers import
 import botoxfilter from "../images/botoxfilter.svg"
 import bridges from "../images/bridges.svg"
 
