@@ -10,6 +10,7 @@ import theme from "../css/theme"
 import ServiceCards from "../components/ServiceCards"
 import botoxfilter from "../images/botoxfilter.svg"
 import bridges from "../images/bridges.svg"
+import veneers2 from "../images/veneers2.svg"
 
 function cosmetic() {
   return (
@@ -57,7 +58,7 @@ function cosmetic() {
             text:
               "Veneers are thin, decorative coverings laid over your natural teeth, used to conceal a variety of imperfections such as chips, cracks, stains, gaps and alignment issues, and worn or disproportionate teeth.",
             btn: "Contact Us",
-            src: bridges,
+            src: veneers2,
             key: 1,
             alt: "veneers",
           },
