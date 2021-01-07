@@ -25,14 +25,14 @@ function Testimonials() {
       text:
         "This team of awesome people saved me on a Sunday morning from some unbearable pain. Dr. Quintero was an amazing professional from the first appointment to the last. My root canal and my crown went perfect. Thank you and your team for taking great care of me!!!",
       name: "Alex Kaplunov",
-      image: data.allFile.nodes[0].childImageSharp.fixed,
+      image: data.allFile.nodes[1].childImageSharp.fixed,
       key: 0,
     },
     {
       text:
         "The professionalism, level of care, knowledge of the staff and all around experience in this offic exactly what my family was looking for. The staff explains things/procedures in a way that the patient can understand and is comfortable with. Thank you for an excellent experience.",
       name: "Leah Rosenfeld",
-      image: data.allFile.nodes[1].childImageSharp.fixed,
+      image: data.allFile.nodes[0].childImageSharp.fixed,
       key: 1,
     },
     {

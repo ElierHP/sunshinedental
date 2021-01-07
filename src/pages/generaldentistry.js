@@ -52,6 +52,7 @@ function generaldentistry() {
             src: teethcleanings,
             key: 0,
             alt: "teeth-cleanings",
+            href: "/contact",
           },
           {
             title: "Fillings & Crowns",
@@ -61,6 +62,7 @@ function generaldentistry() {
             src: fillings,
             key: 1,
             alt: "fillings-&-crowns",
+            href: "/contact",
           },
           {
             title: "Root Canals & Bridges",
@@ -70,6 +72,7 @@ function generaldentistry() {
             src: rootcanals,
             key: 2,
             alt: "root-canals-&-bridges",
+            href: "/contact",
           },
         ]}
       />

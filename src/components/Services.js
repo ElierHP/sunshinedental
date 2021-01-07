@@ -17,6 +17,7 @@ function Services() {
       src: dentalhealth,
       key: 0,
       alt: "general-dentistry",
+      href: "/generaldentistry",
     },
     {
       title: "Cosmetic",
@@ -26,6 +27,7 @@ function Services() {
       src: toothbrush,
       key: 1,
       alt: "cosmetic",
+      href: "/cosmetic",
     },
     {
       title: "Invisalign",
@@ -34,7 +36,8 @@ function Services() {
       btn: "Learn More",
       src: tooth,
       key: 2,
-      alt: "invisilign",
+      alt: "invisalign",
+      href: "/invisalign",
     },
   ]
   return (
@@ -51,6 +54,7 @@ function Services() {
                 src={e.src}
                 key={e.key}
                 alt={e.alt}
+                href={e.href}
               />
             )
           })}

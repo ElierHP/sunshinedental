@@ -15,7 +15,7 @@ import veneers2 from "../images/veneers2.svg"
 function cosmetic() {
   return (
     <Layout>
-      <SEO title="General Dentistry" />
+      <SEO title="Cosmetic" />
       <ServicesHeader
         title={`Cosmetic & Restoration`}
         subtitle="Achieve the smile of your dreams"
@@ -52,6 +52,7 @@ function cosmetic() {
             src: bridges,
             key: 0,
             alt: "bridges",
+            href: "/contact",
           },
           {
             title: "Veneers",
@@ -61,6 +62,7 @@ function cosmetic() {
             src: veneers2,
             key: 1,
             alt: "veneers",
+            href: "/contact",
           },
           {
             title: "Botox & Filler",
@@ -70,6 +72,7 @@ function cosmetic() {
             src: botoxfilter,
             key: 2,
             alt: "botox-and-filler",
+            href: "/contact",
           },
         ]}
       />

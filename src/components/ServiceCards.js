@@ -20,6 +20,7 @@ function ServiceCards({ data }) {
                 alt={e.alt}
                 bgColor={theme.colors.primaryhover}
                 hoverColor={theme.colors.primary}
+                href={e.href}
               />
             )
           })}

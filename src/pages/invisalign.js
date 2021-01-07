@@ -15,7 +15,7 @@ import teethstraight from "../images/teethstraight.svg"
 function invisalign() {
   return (
     <Layout>
-      <SEO title="General Dentistry" />
+      <SEO title="Invisalign" />
       <ServicesHeader
         title="Invisalign"
         subtitle="Trained Orthodontist"
@@ -49,6 +49,7 @@ function invisalign() {
             src: teethstraight,
             key: 0,
             alt: "teeth-straightening",
+            href: "/contact",
           },
           {
             title: "Healthier Smile",
@@ -58,6 +59,7 @@ function invisalign() {
             src: healthiersmile,
             key: 1,
             alt: "healthier-smile",
+            href: "/contact",
           },
           {
             title: "Clear Aligners",
@@ -67,6 +69,7 @@ function invisalign() {
             src: teethwhitenings,
             key: 2,
             alt: "clear-aligners",
+            href: "/contact",
           },
         ]}
       />

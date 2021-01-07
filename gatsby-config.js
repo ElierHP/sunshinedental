@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Starter with Emotion 10`,
-    description: ``,
-    author: `Benny Hernandez`,
+    title: `Sunshine Dental`,
+    description: `Dentistry at Valencia Shores Blvd`,
+    author: `Elier Hernandez`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

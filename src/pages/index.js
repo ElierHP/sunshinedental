@@ -10,7 +10,7 @@ import Testimonials from "../components/Testimonials"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Dentistry at Valencia Shores Blvd" />
     <Hero />
     <OfficeHours />
     <ImageSection showBtn />
