@@ -50,7 +50,10 @@ const Footer = () => {
                 <Link to="/newpatients">New Patients</Link>
               </li>
               <li>
-                <Link to="/services">Services</Link>
+                <Link to="/invisalign">Invisalign</Link>
+              </li>
+              <li>
+                <Link to="/cosmetic">Cosmetics</Link>
               </li>
               <li>
                 <Link to="/about">About</Link>
