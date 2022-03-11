@@ -1,6 +1,6 @@
-# Portfolio
+# Sunshine Dental
 
-![portfolio website](./src/images/home-screenshot.png)
+![sunshine dental](./src/images/home-screenshot.png)
 
 #### Top Technologies
 
