@@ -4,7 +4,7 @@ import * as Yup from "yup"
 import theme from "../css/theme"
 import styled from "@emotion/styled"
 import Container from "../components/Container"
-import success from "../pages/success"
+import "aos/dist/aos.css"
 
 function ContactForm() {
   const encode = data => {
@@ -17,7 +17,13 @@ function ContactForm() {
   }
   return (
     <Container>
-      <Heading>How can we help you today?</Heading>
+      <Heading
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="0"
+      >
+        How can we help you today?
+      </Heading>
       <Wrapper>
         <Formik
           initialValues={{
@@ -63,7 +69,11 @@ function ContactForm() {
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
             <FormWrapper>
-              <div>
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+              >
                 <InputContainer>
                   <label htmlFor="firstName">First Name:</label>
                   <Field name="firstName" type="text" />
@@ -73,7 +83,12 @@ function ContactForm() {
                 </ErrorContainer>
               </div>
 
-              <div>
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-offset="0"
+              >
                 <InputContainer>
                   <label htmlFor="lastName">Last Name:</label>
                   <Field name="lastName" type="text" />
@@ -83,7 +98,12 @@ function ContactForm() {
                 </ErrorContainer>
               </div>
 
-              <div>
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-aos-offset="0"
+              >
                 <InputContainer>
                   <label htmlFor="phone">Phone:</label>
                   <Field name="phone" type="tel" />
@@ -93,7 +113,12 @@ function ContactForm() {
                 </ErrorContainer>
               </div>
 
-              <div>
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                data-aos-offset="0"
+              >
                 <InputContainer>
                   <label htmlFor="email">Email:</label>
                   <Field name="email" type="email" />
@@ -104,7 +129,12 @@ function ContactForm() {
               </div>
             </FormWrapper>
 
-            <TextArea>
+            <TextArea
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+              data-aos-offset="0"
+            >
               <label htmlFor="message">Message:</label>
               <TextAreaInput
                 name="message"
@@ -117,7 +147,15 @@ function ContactForm() {
               </ErrorContainer>
             </TextArea>
 
-            <button type="submit">Submit</button>
+            <button
+              type="submit"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+              data-aos-offset="0"
+            >
+              Submit
+            </button>
           </StyledForm>
         </Formik>
       </Wrapper>
@@ -130,7 +168,7 @@ const Heading = styled.h1`
   margin-top: 2.5rem;
 `
 const Wrapper = styled.section`
-  background-color: #f0f3f2;
+  background-color: #e5e5e5;
   padding: 3rem 6rem 2rem 6rem;
   margin-top: 2rem;
   border-radius: 0.2rem;
@@ -153,7 +191,7 @@ const StyledForm = styled(Form)`
     background-color: ${theme.colors.primary};
     border: none;
     color: ${theme.colors.light};
-    padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     border-radius: 0.3rem;
     font-size: ${theme.fontSizes[2]}px;
     margin-top: 2rem;

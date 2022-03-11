@@ -11,6 +11,7 @@ import ServiceCards from "../components/ServiceCards"
 import botoxfilter from "../images/botoxfilter.svg"
 import bridges from "../images/bridges.svg"
 import veneers2 from "../images/veneers2.svg"
+import "aos/dist/aos.css"
 
 function cosmetic() {
   return (
@@ -22,7 +23,12 @@ function cosmetic() {
         imgNum={0}
       />
       <ServicesOverview title="Overview">
-        <p>
+        <p
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+          data-aos-offset="0"
+        >
           Beautiful, natural, undetectable. A smile that is distinctly you.
           We’ve seen first-hand the impact our work has had in the lives of our
           patients. Your smile can bring out the beauty in yourself, the beauty
@@ -32,7 +38,12 @@ function cosmetic() {
           tooth or your furthest back molar, you can count on us to make it
           blend seamlessly with the rest of your smile.
         </p>
-        <p>
+        <p
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          data-aos-offset="0"
+        >
           Our cosmetic services aren’t only meant to improve the look of your
           smile, but to also improve dental complications and diseases such as a
           misaligned bite, halitosis, and gingivitis. If you have been putting
@@ -53,6 +64,7 @@ function cosmetic() {
             key: 0,
             alt: "bridges",
             href: "/contact",
+            delay: "100",
           },
           {
             title: "Veneers",
@@ -63,6 +75,7 @@ function cosmetic() {
             key: 1,
             alt: "veneers",
             href: "/contact",
+            delay: "200",
           },
           {
             title: "Botox & Filler",
@@ -73,6 +86,7 @@ function cosmetic() {
             key: 2,
             alt: "botox-and-filler",
             href: "/contact",
+            delay: "300",
           },
         ]}
       />

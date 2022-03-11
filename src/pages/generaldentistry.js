@@ -11,6 +11,7 @@ import ServiceCards from "../components/ServiceCards"
 import teethcleanings from "../images/teethcleanings.svg"
 import fillings from "../images/fillings.svg"
 import rootcanals from "../images/rootcanals.svg"
+import "aos/dist/aos.css"
 
 function generaldentistry() {
   return (
@@ -22,7 +23,12 @@ function generaldentistry() {
         imgNum={1}
       />
       <ServicesOverview title="Overview">
-        <p>
+        <p
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+          data-aos-offset="0"
+        >
           We handle general dentistry with the same skill, precision, and care
           that we approach our specialty work with. Teeth cleaning, fillings,
           crowns, bridges, root canal, dentures are all approached with
@@ -32,7 +38,12 @@ function generaldentistry() {
           smile is always at its best and brightest so you feel confident in
           sharing it with the world.
         </p>
-        <p>
+        <p
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          data-aos-offset="0"
+        >
           Our practice offers an array of dental services meant to help the
           people in our community. From basic services such as routine x-rays
           and cleanings; to smile makeovers such as veneers, crowns, Invisalign;
@@ -53,6 +64,7 @@ function generaldentistry() {
             key: 0,
             alt: "teeth-cleanings",
             href: "/contact",
+            delay: "100",
           },
           {
             title: "Fillings & Crowns",
@@ -63,6 +75,7 @@ function generaldentistry() {
             key: 1,
             alt: "fillings-&-crowns",
             href: "/contact",
+            delay: "200",
           },
           {
             title: "Root Canals & Bridges",
@@ -73,6 +86,7 @@ function generaldentistry() {
             key: 2,
             alt: "root-canals-&-bridges",
             href: "/contact",
+            delay: "300",
           },
         ]}
       />

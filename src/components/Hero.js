@@ -5,6 +5,7 @@ import BackgroundImage from "gatsby-background-image"
 import Button from "./Button"
 import Container from "./Container"
 import theme from "../css/theme"
+import "aos/dist/aos.css"
 
 const Hero = () => {
   const data = useStaticQuery(
@@ -27,14 +28,32 @@ const Hero = () => {
   return (
     <StyledBackgroundImage Tag="section" fluid={imageData} alt="girl-smile">
       <Container>
-        <Wrapper>
+        <Wrapper
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
           <Content>
-            <h1>We want you to love your smile.</h1>
-            <p>
+            <h1
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              We want you to love your smile.
+            </h1>
+            <p
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
               Schedule an appointment with us and experience the Sunshine Dental
               difference.
             </p>
-            <BtnContainer>
+            <BtnContainer
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
               <Button href="/contact" text="Contact Us" />
               <Button
                 text="New Patients"

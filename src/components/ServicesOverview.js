@@ -6,7 +6,9 @@ function ServicesOverview({ title, children }) {
   return (
     <Section>
       <Container>
-        <H1>{title}</H1>
+        <H1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+          {title}
+        </H1>
         {children}
       </Container>
     </Section>

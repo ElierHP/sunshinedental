@@ -6,6 +6,7 @@ import theme from "../css/theme"
 import PatientProcess from "../components/PatientProcess"
 import ScheduleAppointment from "../components/ScheduleAppointment"
 import Nurse from "../images/nurse.svg"
+import "aos/dist/aos.css"
 
 const NewPatients = () => (
   <Layout>

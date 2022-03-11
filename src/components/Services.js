@@ -6,6 +6,7 @@ import dentalhealth from "../images/dentalhealth.svg"
 import tooth from "../images/tooth.svg"
 import toothbrush from "../images/toothbrush.svg"
 import theme from "../css/theme"
+import "aos/dist/aos.css"
 
 function Services() {
   const data = [
@@ -18,6 +19,7 @@ function Services() {
       key: 0,
       alt: "general-dentistry",
       href: "/generaldentistry",
+      delay: "100",
     },
     {
       title: "Cosmetic",
@@ -28,6 +30,7 @@ function Services() {
       key: 1,
       alt: "cosmetic",
       href: "/cosmetic",
+      delay: "200",
     },
     {
       title: "Invisalign",
@@ -38,12 +41,15 @@ function Services() {
       key: 2,
       alt: "invisalign",
       href: "/invisalign",
+      delay: "300",
     },
   ]
   return (
     <Section>
       <Container>
-        <h1>Our Services</h1>
+        <h1 data-aos="fade-down" data-aos-duration="1000">
+          Our Services
+        </h1>
         <Wrapper>
           {data.map(e => {
             return (
@@ -55,6 +61,7 @@ function Services() {
                 key={e.key}
                 alt={e.alt}
                 href={e.href}
+                delay={e.delay}
               />
             )
           })}

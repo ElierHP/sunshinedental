@@ -5,6 +5,7 @@ import theme from "../css/theme"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { css } from "@emotion/core"
+import "aos/dist/aos.css"
 
 function OurDoctors({ name, title, text, imgNum }) {
   const data = useStaticQuery(graphql`
@@ -50,10 +51,22 @@ function OurDoctors({ name, title, text, imgNum }) {
   return (
     <Section>
       <Container>
-        <h1>Meet the Dentists</h1>
+        <h1
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          data-aos-offset="0"
+        >
+          Meet the Dentists
+        </h1>
         {doctorData.map(e => (
           <div>
-            <Content>
+            <Content
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+              data-aos-offset="0"
+            >
               <ImgContainer>
                 <StyledImg fluid={e.img} />
               </ImgContainer>
@@ -66,6 +79,8 @@ function OurDoctors({ name, title, text, imgNum }) {
               </div>
             </Content>
             <div
+              data-aos="fade"
+              data-aos-duration="1000"
               //Line CSS
               css={css`
                 width: 5px;

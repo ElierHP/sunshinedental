@@ -29,14 +29,32 @@ function PageBanner({ title, subtitle, text, btnText, href, img }) {
       <Container>
         <Wrapper>
           <Content>
-            <h4>{subtitle}</h4>
-            <h1>{title}</h1>
-            <p>{text}</p>
-            <BtnContainer>
+            <h4
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              {subtitle}
+            </h4>
+            <h1 data-aos="fade-down" data-aos-duration="1000">
+              {title}
+            </h1>
+            <p
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              {text}
+            </p>
+            <BtnContainer
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
               <Button text={btnText} telRef={href} isCallBtn={true} />
             </BtnContainer>
           </Content>
-          <ImgContainer>
+          <ImgContainer data-aos="fade-left" data-aos-duration="1000">
             <img src={img} alt="" />
           </ImgContainer>
         </Wrapper>

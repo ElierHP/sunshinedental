@@ -28,8 +28,12 @@ function ServicesHeader({ title, subtitle, imgNum }) {
   return (
     <StyledBackgroundImage Tag="section" fluid={imageData[imgNum]}>
       <Content>
-        <h4>{subtitle}</h4>
-        <h1>{title}</h1>
+        <h4 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+          {subtitle}
+        </h4>
+        <h1 data-aos="fade-down" data-aos-duration="1000">
+          {title}
+        </h1>
       </Content>
     </StyledBackgroundImage>
   )

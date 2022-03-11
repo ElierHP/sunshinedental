@@ -4,6 +4,7 @@ import theme from "../css/theme"
 import styled from "@emotion/styled"
 import building from "../images/building.svg"
 import Container from "./Container"
+import "aos/dist/aos.css"
 
 function ImageSection({
   title,
@@ -20,16 +21,26 @@ function ImageSection({
     <section>
       <Container>
         <Wrapper>
-          <div>
+          <div data-aos="fade-right" data-aos-duration="1000">
             <img src={building} alt="building" />
           </div>
           <Content>
-            <h1>{title || "Welcome to Sunshine Dental"}</h1>
-            <p>
+            <h1 data-aos="fade-left" data-aos-duration="1000">
+              {title || "Welcome to Sunshine Dental"}
+            </h1>
+            <p
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
               {text ||
                 "Sunshine Dental office was constructed from the ground up. The office was designed with the comfort of the patient in mind. We are offering general, cosmetic, and surgical services to our community."}
             </p>
-            <BtnContainer>
+            <BtnContainer
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
               <Button
                 text={btnText || "Learn More"}
                 href={btnRef || "/about"}

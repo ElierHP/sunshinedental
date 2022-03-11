@@ -6,6 +6,7 @@ import Container from "./Container"
 import theme from "../css/theme"
 import Button from "./Button"
 import Logo from "../images/logo.svg"
+import "aos/dist/aos.css"
 
 const Header = ({ siteTitle }) => {
   const [toggler, setToggler] = useState(false)
@@ -81,7 +82,7 @@ const Header = ({ siteTitle }) => {
     <MainHeader>
       <Container>
         <NavContainer>
-          <Link to="/">
+          <Link to="/" data-aos="fade-right" data-aos-duration="1000">
             <img src={Logo} alt="sunshine-dental-logo" />
           </Link>
           <NavUl>
@@ -119,7 +120,7 @@ const Header = ({ siteTitle }) => {
               <NavLink to="/contact">Contact</NavLink>
             </li>
           </NavUl>
-          <BtnContainer>
+          <BtnContainer data-aos="fade-left" data-aos-duration="1000">
             <Button
               text={`Call us at ${theme.phone}`}
               telRef={`tel:${theme.phone}`}

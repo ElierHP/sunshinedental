@@ -4,6 +4,7 @@ import Container from "./Container"
 import TestimonialCard from "./TestimonialCard"
 import styled from "@emotion/styled"
 import theme from "../css/theme"
+import "aos/dist/aos.css"
 
 function Testimonials() {
   const data = useStaticQuery(graphql`
@@ -27,6 +28,7 @@ function Testimonials() {
       name: "Alex Kaplunov",
       image: data.allFile.nodes[1].childImageSharp.fixed,
       key: 0,
+      delay: "100",
     },
     {
       text:
@@ -34,6 +36,7 @@ function Testimonials() {
       name: "Leah Rosenfeld",
       image: data.allFile.nodes[0].childImageSharp.fixed,
       key: 1,
+      delay: "200",
     },
     {
       text:
@@ -41,11 +44,14 @@ function Testimonials() {
       name: "Daniel Alvarez",
       image: data.allFile.nodes[2].childImageSharp.fixed,
       key: 2,
+      delay: "300",
     },
   ]
   return (
     <Section>
-      <h1>Happy Patients</h1>
+      <h1 data-aos="fade-down" data-aos-duration="1000">
+        Happy Patients
+      </h1>
       <Container>
         {cardData.map(e => {
           return (
@@ -54,6 +60,7 @@ function Testimonials() {
               name={e.name}
               image={e.image}
               key={e.key}
+              delay={e.delay}
             />
           )
         })}

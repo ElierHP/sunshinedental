@@ -21,6 +21,7 @@ function ServiceCards({ data }) {
                 bgColor={theme.colors.primaryhover}
                 hoverColor={theme.colors.primary}
                 href={e.href}
+                delay={e.delay}
               />
             )
           })}

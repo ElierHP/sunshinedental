@@ -3,9 +3,23 @@ import Button from "./Button"
 import styled from "@emotion/styled"
 import theme from "../css/theme"
 
-function Card({ title, text, btn, src, href, bgColor, hoverColor, alt }) {
+function Card({
+  title,
+  text,
+  btn,
+  src,
+  href,
+  bgColor,
+  hoverColor,
+  alt,
+  delay,
+}) {
   return (
-    <Wrapper>
+    <Wrapper
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-delay={delay}
+    >
       <ImgContainer>
         <img src={src} alt={alt} />
       </ImgContainer>

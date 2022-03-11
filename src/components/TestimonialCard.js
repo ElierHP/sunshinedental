@@ -3,10 +3,14 @@ import Img from "gatsby-image"
 import styled from "@emotion/styled"
 import theme from "../css/theme"
 
-function Testimonials({ image, text, name }) {
+function Testimonials({ image, text, name, delay }) {
   return (
     <Container>
-      <Wrapper>
+      <Wrapper
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-delay={delay}
+      >
         <ImageContaier>
           <Image fixed={image} />
         </ImageContaier>

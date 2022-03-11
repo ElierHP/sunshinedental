@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import theme from "../css/theme"
@@ -14,6 +14,7 @@ import { css, Global } from "@emotion/core"
 import Header from "./header"
 import "./layout.css"
 import Footer from "./Footer"
+import AOS from "aos"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,6 +26,10 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
 
   return (
     <>

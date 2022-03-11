@@ -3,13 +3,14 @@ import Button from "./Button"
 import Container from "./Container"
 import styled from "@emotion/styled"
 import theme from "../css/theme"
+import "aos/dist/aos.css"
 
 function OfficeHours() {
   return (
     <Section>
       <Container>
         <Wrapper>
-          <OfficeContent>
+          <OfficeContent data-aos="fade-right" data-aos-duration="1000">
             <h1>Our Office</h1>
             <p>Location: Valencia Shores Blvd</p>
             <p>State/City: Lake Worth, Florida</p>
@@ -24,7 +25,11 @@ function OfficeHours() {
               />
             </BtnContainer>
           </OfficeContent>
-          <Schedule>
+          <Schedule
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             <h1>Office Hours</h1>
             <ul>
               <li>

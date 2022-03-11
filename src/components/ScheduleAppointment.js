@@ -3,13 +3,20 @@ import Container from "../components/Container"
 import styled from "@emotion/styled"
 import Button from "../components/Button"
 import theme from "../css/theme"
+import "aos/dist/aos.css"
 
 function ScheduleAppointment() {
   return (
     <Section>
       <Container>
-        <h1>Schedule an appointment today!</h1>
-        <BtnContainer>
+        <h1 data-aos="fade-right" data-aos-duration="1000">
+          Schedule an appointment today!
+        </h1>
+        <BtnContainer
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
           <Button
             text={`Call us at ${theme.phone}`}
             telRef={`Tel:${theme.phone}`}

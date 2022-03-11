@@ -11,6 +11,7 @@ import ServiceCards from "../components/ServiceCards"
 import healthiersmile from "../images/healthiersmile.svg"
 import teethwhitenings from "../images/teethwhitenings.svg"
 import teethstraight from "../images/teethstraight.svg"
+import "aos/dist/aos.css"
 
 function invisalign() {
   return (
@@ -22,7 +23,12 @@ function invisalign() {
         imgNum={2}
       />
       <ServicesOverview title="Overview">
-        <p>
+        <p
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          data-aos-offset="0"
+        >
           Invisalign is a great tooth straightening option for both adult
           patients and teenagers who are looking for an alternative to
           traditional metal braces. This means you can kiss the days of broken
@@ -31,7 +37,12 @@ function invisalign() {
           brush your teeth and can provide picture-worthy results in just a
           matter of months.
         </p>
-        <p>
+        <p
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          data-aos-offset="0"
+        >
           Depending on the complexity of your case, you could complete your
           whole Invisalign treatment in as little as 6 months, but you’ll start
           seeing results much sooner! If you’re ready to start your journey to a
@@ -50,6 +61,7 @@ function invisalign() {
             key: 0,
             alt: "teeth-straightening",
             href: "/contact",
+            delay: "100",
           },
           {
             title: "Healthier Smile",
@@ -60,6 +72,7 @@ function invisalign() {
             key: 1,
             alt: "healthier-smile",
             href: "/contact",
+            delay: "200",
           },
           {
             title: "Clear Aligners",
@@ -70,6 +83,7 @@ function invisalign() {
             key: 2,
             alt: "clear-aligners",
             href: "/contact",
+            delay: "300",
           },
         ]}
       />
