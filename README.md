@@ -29,6 +29,4 @@ I made this website using React and Gatsby with Styled Components for the CSS. I
 
 #### :mailbox: Reach out to me!
 
-- :clipboard: [My Resume/CV](https://elierhernandez.netlify.app/static/resume-b2df90c704757adf476d203913fb0339.pdf)
 - :email: elierporto@gmail.com
-- :page_facing_up: [elierhernandez.netlify.app](https://www.elierhernandez.netlify.app)
